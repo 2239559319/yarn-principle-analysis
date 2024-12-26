@@ -1,7 +1,7 @@
 ---
 layout:
   title:
-    visible: true
+    visible: false
   description:
     visible: false
   tableOfContents:
@@ -14,15 +14,15 @@ layout:
 
 # 2 源码概述
 
-### yarn的发展历史
+## yarn的发展历史
 
 从[yarn官网blog](https://classic.yarnpkg.com/lang/en/)来看`yarn`最开始于2016年发布，最开始的主打的就是一个快。一直保持很频繁的迭代知道2020年。2020年开始`yarn`团队主要投入到当时`yarn2`的开发，也就是`berry`版本，也就是现在的最新版`yarn4`的前身。从[github/yarn仓库](https://github.com/yarnpkg/yarn)来看，`yarn`从2020年开始就不再迭代，只是提交了几个细小的配置问题，剩余的`pr`全部没有合入。现在所有的feature以及bug都在`berry`的[仓库](https://github.com/yarnpkg/berry)进行修改
 
 截至2024.12.26，`yarn`的最新版本是`1.22.22`
 
-### 源码概述
+## 源码概述
 
-#### 环境准备
+### 环境准备
 
 需要准备的环境有`node`，`yarn`，以及`git`
 
@@ -42,7 +42,7 @@ yarn
 
 由于`yarn`源码的包管理工具还是`yarn`，所以准备的环境中需要有`yarn`。很多的包管理工具源码的包管理工具也是自己，比如`pnpm`的源码是用`pnpm`来管理，`npm`的源码也是使用`npm`自己来管理
 
-#### 代码分析
+### 代码分析
 
 通过`package.json`看到`yarn`的源码使用`flow`来编写，使用`babel`以及`flow 的babel插件`来完成编译。为了统一流程`yarn`使用了`gulp`。常用的编译是`build script`，这是把编译到`lib`目录下，这种编译并不打包。还有一种是`build-bundle`，这是使用`webpack`把所有`yarn`的代码以及依赖的代码全部打到一个文件里面，`corepack`使用的`yarn`就是使用的这种形式的打包。
 
@@ -56,7 +56,7 @@ yarn的依赖
 
 为了调试需要编译出带有正确`sourcemap`的产物文件。这里直接使用新的`babel`版本以及`@babel/preset-flow`来编译。由于`yarn`的源码中大部分的语法都是`es6`的语法，所以不需要`@babel/preset-env`，直接生成`es6`语法的代码。同时为了编译出的`module`是`commonjs`需要使用`@babel/plugin-transform-modules-commonjs`。
 
-#### 打包调试版本
+### 打包调试版本
 
 通过上面的分析安装`babel`有关的包
 
@@ -98,6 +98,6 @@ module.exports = {
 
 ![](https://unpkg.com/xiaochuan-static-dev@0.0.1/dist/0ddcdb3cfa852870.png)
 
-### 后续
+## 后续
 
 本章已经打包出`sourcemap`的产物并验证了可以调试源码，后续将使用此产物调试。可以结合`vscode`的`launch.json`来进行调试。
