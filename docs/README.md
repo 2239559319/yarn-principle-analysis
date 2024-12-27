@@ -9,4 +9,3 @@
 `相关链接`
 
 * [github](https://github.com/2239559319/yarn-principle-analysis)
-* [gitbook](https://2239559319.gitbook.io/yarn-yuan-li-jie-xi)
