@@ -90,4 +90,4 @@ node --cpu-prof --cpu-prof-interval=1 /yarn-dev/yarn/lib/cli/index.js install
 
 author: [xiaochuan](https://github.com/2239559319)
 
-date: 2024.12.23
+date: 2024.12.26
