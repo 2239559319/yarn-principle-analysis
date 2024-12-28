@@ -1,5 +1,9 @@
 # 调试指南
 
+> 本文发布于[掘金专栏](https://juejin.cn/column/7452635467849105459)
+
+> 文章原文位于[github](https://github.com/2239559319/yarn-principle-analysis)
+
 在上一章中已经打包出带有sourcemap的`yarn`产物，本章将初步进行调试环境的配置
 
 ## 使用vscode进行调试
@@ -83,3 +87,7 @@ node --cpu-prof --cpu-prof-interval=1 /yarn-dev/yarn/lib/cli/index.js install
 ## 总结
 
 本章介绍了使用`vscode`对`yarn`的源码进行调试，以及使用`chrome`的调试工具对`yarn`命令生成的火焰图进行分析。在接下来的调试里面会使用这两个方法进行分析调试。`vscode`的调试主要使用断点进行调试，方便观察每一步的变量以及逻辑，而火焰图则方便观察命令整体的运行步骤以及运行规律。
+
+author: [xiaochuan](https://github.com/2239559319)
+
+date: 2024.12.23

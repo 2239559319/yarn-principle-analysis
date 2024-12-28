@@ -1,5 +1,9 @@
 # 1 yarn概述
 
+> 本文发布于[掘金专栏](https://juejin.cn/column/7452635467849105459)
+
+> 文章原文位于[github](https://github.com/2239559319/yarn-principle-analysis)
+
 > 本书中所说的`yarn`统一指`yarn1`，如果是`yarn2`或者`yarn3` `yarn4` 会特别的著名版本号。
 
 ## yarn的简介
@@ -107,3 +111,7 @@ module.exports = {
 ### 后续
 
 本章已经打包出`sourcemap`的产物并验证了可以调试源码，后续将使用此产物调试。可以结合`vscode`的`launch.json`来进行调试。
+
+author: [xiaochuan](https://github.com/2239559319)
+
+date: 2024.12.23

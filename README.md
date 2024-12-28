@@ -8,4 +8,5 @@
 
 `相关链接`
 
-* [github](https://github.com/2239559319/yarn-principle-analysis)
+- [github](https://github.com/2239559319/yarn-principle-analysis)
+- [掘金专栏](https://juejin.cn/column/7452635467849105459)
