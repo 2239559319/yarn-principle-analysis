@@ -16,3 +16,4 @@ The articles in the repository are knowledge related to `yarn` and source code o
 
 - [github](https://github.com/2239559319/yarn-principle-analysis)
 - [medium list](https://medium.com/@w2239559319/list/yarn-principle-analysis-ebdbd4b1ab25)
+- [juejin](https://juejin.cn/column/7452635467849105459)
