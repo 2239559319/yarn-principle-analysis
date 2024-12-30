@@ -1,5 +1,11 @@
 ![logo](https://unpkg.com/xiaochuan-static-dev@0.0.8/dist/de1beb1bdbaebc8a.png) 
 
+<div align="center">
+
+[English](./README-EN.md) | 简体中文
+
+</div>
+
 # yarn源码解析
 
 本书不定时更新
