@@ -2,8 +2,7 @@
   "private": true,
   "lint-staged": {
     "*.md": [
-      "yarn format",
-      "git add"
+      "prettier --write '**/*.md'"
     ]
   },
   "scripts": {
