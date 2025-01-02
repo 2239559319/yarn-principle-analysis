@@ -2,7 +2,7 @@
   "private": true,
   "lint-staged": {
     "*.md": [
-      "prettier --write '**/*.md'"
+      "prettier --write"
     ]
   },
   "scripts": {
