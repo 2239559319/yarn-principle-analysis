@@ -19,18 +19,13 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "test yarn version",  // 这里只写了最简单的yarn --version命令的调试
+      "name": "test yarn version", // 这里只写了最简单的yarn --version命令的调试
       "skipFiles": ["<node_internals>/**"],
       "console": "internalConsole",
-      "outFiles": [
-        "${workspaceFolder}/**/*.(m|c|)js",
-        "!**/node_modules/**"
-      ],
+      "outFiles": ["${workspaceFolder}/**/*.(m|c|)js", "!**/node_modules/**"],
       "program": "${workspaceFolder}/mybuild/cli/index.js",
-      "cwd": "${workspaceFolder}/../yarn-source-dev",  // 这个设置为新建的调试文件夹的路径，相对路径绝对路径都可以
-      "args": [
-        "--version"
-      ]
+      "cwd": "${workspaceFolder}/../yarn-source-dev", // 这个设置为新建的调试文件夹的路径，相对路径绝对路径都可以
+      "args": ["--version"]
     }
   ]
 }

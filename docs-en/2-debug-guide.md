@@ -19,18 +19,13 @@ The complete configuration file is as follows.
     {
       "type": "node",
       "request": "launch",
-      "name": "debug yarn version",  // debug yarn --version command
+      "name": "debug yarn version", // debug yarn --version command
       "skipFiles": ["<node_internals>/**"],
       "console": "internalConsole",
-      "outFiles": [
-        "${workspaceFolder}/**/*.(m|c|)js",
-        "!**/node_modules/**"
-      ],
+      "outFiles": ["${workspaceFolder}/**/*.(m|c|)js", "!**/node_modules/**"],
       "program": "${workspaceFolder}/mybuild/cli/index.js",
-      "cwd": "${workspaceFolder}/../yarn-source-dev",  // This setting is the path of the newly created debug folder. Both relative and absolute paths are acceptable.
-      "args": [
-        "--version"
-      ]
+      "cwd": "${workspaceFolder}/../yarn-source-dev", // This setting is the path of the newly created debug folder. Both relative and absolute paths are acceptable.
+      "args": ["--version"]
     }
   ]
 }

@@ -78,15 +78,15 @@ yarn add -D @babel/core @babel/cli @babel/preset-flow @babel/plugin-transform-mo
 
 ```js
 module.exports = {
-  presets: ["@babel/flow"],
+  presets: ['@babel/flow'],
   plugins: [
     [
-      "@babel/plugin-transform-modules-commonjs",
+      '@babel/plugin-transform-modules-commonjs',
       {
-        lazy: () => true
-      }
-    ]
-  ]
+        lazy: () => true,
+      },
+    ],
+  ],
 };
 ```
 
@@ -94,7 +94,7 @@ module.exports = {
 
 ```json
 {
-    "mybuild": "babel --no-babelrc src -s -d mybuild"
+  "mybuild": "babel --no-babelrc src -s -d mybuild"
 }
 ```
 

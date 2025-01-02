@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "lint-staged": {
+    "*.md": [
+      "yarn format",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "format": "prettier --write '**/*.md'",
+    "postinstall": "husky"
+  },
+  "name": "yarn-principle-analysis",
+  "version": "0.0.1",
+  "repository": "git@github.com:2239559319/yarn-principle-analysis.git",
+  "author": "2239559319 <w2239559319@outlook.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2"
+  }
+}

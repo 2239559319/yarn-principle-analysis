@@ -1,4 +1,4 @@
-![logo](https://unpkg.com/xiaochuan-static-dev@0.0.8/dist/de1beb1bdbaebc8a.png) 
+![logo](https://unpkg.com/xiaochuan-static-dev@0.0.8/dist/de1beb1bdbaebc8a.png)
 
 <div align="center">
 
