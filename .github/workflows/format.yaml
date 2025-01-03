@@ -1,6 +1,8 @@
 name: format check
 
 on:
+  pull_request:
+    types: [opened, reopened, synchronize]
   push:
   workflow_dispatch:
 
